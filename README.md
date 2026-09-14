@@ -7,7 +7,7 @@
 ## Установка
 
 ```bash
-npx skills add dudu-yam/rkn-compliance
+npx skills add Qwaon/rkn-compliance
 ```
 
 Работает с Claude Code, Cursor, Codex, Gemini CLI, Copilot CLI и другими агентами — [полный список](https://github.com/vercel-labs/skills).
