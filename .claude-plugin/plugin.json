@@ -1,0 +1,23 @@
+{
+  "name": "rkn-compliance",
+  "version": "0.1.0",
+  "description": "Аудит сайта или веб-приложения на соответствие требованиям РФ: 152-ФЗ, ЗОЗПП, 436-ФЗ, 347-ФЗ. Агент читает код, находит нарушения со ссылками на файлы и строки, чинит то, что решается кодом.",
+  "author": {
+    "name": "duduev"
+  },
+  "repository": "https://github.com/duduev/rkn-compliance",
+  "license": "MIT",
+  "keywords": [
+    "compliance",
+    "152-fz",
+    "rkn",
+    "roskomnadzor",
+    "privacy",
+    "gdpr-ru",
+    "cookie-consent",
+    "personal-data"
+  ],
+  "skills": [
+    "./skills/compliance/ru-website-legal-compliance"
+  ]
+}

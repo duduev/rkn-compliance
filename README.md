@@ -7,12 +7,18 @@
 ## Установка
 
 ```bash
-npx skills add Qwaon/rkn-compliance
+npx skills add duduev/rkn-compliance
 ```
 
 Работает с Claude Code, Cursor, Codex, Gemini CLI, Copilot CLI и другими агентами — [полный список](https://github.com/vercel-labs/skills).
 
-Установка вручную: скопируйте папку `ru-website-legal-compliance/` в `~/.claude/skills/` (глобально) или в `.claude/skills/` вашего проекта (командно).
+Как плагин Claude Code:
+
+```
+/plugin install duduev/rkn-compliance
+```
+
+Вручную: скопируйте `skills/compliance/ru-website-legal-compliance/` в `~/.claude/skills/` (глобально) или в `.claude/skills/` вашего проекта (командно).
 
 ## Использование
 
@@ -63,6 +69,19 @@ npx skills add Qwaon/rkn-compliance
 - Не генерирует ERID-токены — их выдаёт ОРД.
 - Не выдаёт готовую к публикации юридическую политику, только черновик с пометкой «требует проверки юристом».
 - Не предлагает чекбоксы согласия в админских формах, где данные вводит оператор со слов клиента: такой чекбокс согласия субъекта не фиксирует и создаёт лишь видимость соответствия.
+
+## Структура репозитория
+
+```
+skills/
+└── compliance/
+    └── ru-website-legal-compliance/
+        ├── SKILL.md                 процедура аудита
+        ├── agents/openai.yaml       метаданные для Codex
+        └── references/templates.md  шаблоны политики, оферты, возврата
+```
+
+Свой скилл — см. [CONTRIBUTING.md](CONTRIBUTING.md). Правила для агентов, работающих с репозиторием, — [AGENTS.md](AGENTS.md). Структуру и фронтматтер проверяет `./scripts/validate-skills.sh`, он же запускается в CI.
 
 ## Дисклеймер
 
